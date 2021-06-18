@@ -1,0 +1,25 @@
+body{
+    background: #978;
+    height: 100%;
+}
+.container{
+    width: 500px;
+    padding: 20px 30px;
+}
+.container .star-widget input{
+    display: none;
+}
+.star-widget label{
+    font-size: 65px;
+    color: #cfcfcf;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+    color: rgb(255,174,0);
+}
+input:checked ~ label{
+    color: rgb(255,174,0);
+}
